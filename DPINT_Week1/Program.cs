@@ -24,6 +24,7 @@ namespace DPINT_Week1
             Console.WriteLine();
             Console.WriteLine();
             WriterFactory.create("column").Show();
+            Console.ReadKey();
         }
     }
 }
