@@ -11,7 +11,7 @@ namespace DPINT_Week1.Impl
     {
         public void Write()
         {
-
+            Console.WriteLine("Spiral Writer implementation!");
         }
     }
 }
