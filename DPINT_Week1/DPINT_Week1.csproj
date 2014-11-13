@@ -41,6 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Impl\BlockWriter.cs" />
+    <Compile Include="Impl\ColumnWriter.cs" />
+    <Compile Include="Impl\ShowText.cs" />
+    <Compile Include="Impl\SpiralWriter.cs" />
+    <Compile Include="Impl\WaveWriter.cs" />
+    <Compile Include="Impl\WriterFactory.cs" />
+    <Compile Include="Interfaces\IWriter.cs" />
+    <Compile Include="Impl\LineWriter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
