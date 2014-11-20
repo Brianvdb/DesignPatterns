@@ -17,6 +17,9 @@ namespace DPINT_Week2
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+
+            Clown clown = new Linkeroog(new Rechteroog(new ClownKaal()));
+            clown.Actie();
         }
     }
 }
