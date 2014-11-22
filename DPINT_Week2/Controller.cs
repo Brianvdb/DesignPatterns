@@ -18,5 +18,10 @@ namespace DPINT_Week2
             view = new View();
             task = new Task();
         }
+
+        public void Go()
+        {
+            task.Go(baChoice);
+        }
     }
 }

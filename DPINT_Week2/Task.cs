@@ -8,9 +8,11 @@ namespace DPINT_Week2
 {
     public class Task
     {
-        public Clown GetClown(bool[] baChoice)
+        public void Go(bool[] baChoice)
         {
-            return null;
+            Clown clown = Factory.GetClown(baChoice);
+            clown.Actie();
+
         }
     }
 }
