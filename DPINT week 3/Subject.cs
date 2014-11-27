@@ -9,7 +9,6 @@ namespace DPINT_week_3
     public abstract class Subject
     {
         private List<Observer> observers;
-        public int MyProperty { get; set; }
 
         public Subject(){
             observers = new List<Observer>();
@@ -27,5 +26,9 @@ namespace DPINT_week_3
         {
             observers.Remove(observer);
         }
+
+        public abstract Object setState(Object o);
+
+        public abstract Object getState();
     }
 }
