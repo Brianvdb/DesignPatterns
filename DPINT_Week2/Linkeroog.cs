@@ -18,7 +18,8 @@ namespace DPINT_Week2
         public override void Actie()
         {
             base.Actie();
-    
+            string message = "LinkerOog";
+            var result = MessageBox.Show(message, message, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

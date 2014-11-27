@@ -14,12 +14,17 @@ namespace DPINT_Week2
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
+            /*Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
 
             Clown clown = new Linkeroog(new Rechteroog(new ClownKaal()));
-            clown.Actie();
+            clown.Actie();*/
+
+            bool[] baChoice = new bool[] { true, true, true, true, false, false, false, false, false, false, false };
+
+            Controller controller = new Controller(baChoice);
+            controller.Go();
         }
     }
 }

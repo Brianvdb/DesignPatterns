@@ -13,8 +13,9 @@ namespace DPINT_Week2
         private Task task;
         private bool[] baChoice;
 
-        public Controller()
+        public Controller(bool[] baChoice)
         {
+            this.baChoice = baChoice;
             view = new View();
             task = new Task();
         }
