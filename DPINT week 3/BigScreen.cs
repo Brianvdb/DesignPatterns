@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DPINT_week_3
 {
-    class BigScreen : Screen
+    public class BigScreen : Screen
     {
     }
 }
