@@ -41,9 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BigScreen.cs" />
     <Compile Include="Observer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reclame.cs" />
+    <Compile Include="Screen.cs" />
+    <Compile Include="SmallScreen.cs" />
     <Compile Include="Subject.cs" />
   </ItemGroup>
   <ItemGroup>
