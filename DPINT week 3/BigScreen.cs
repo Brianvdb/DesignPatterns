@@ -8,5 +8,10 @@ namespace DPINT_week_3
 {
     public class BigScreen : Screen
     {
+        public override void Update(Subject subject)
+        {
+            string reclame = (string) subject.GetState();
+            Console.WriteLine("BIG: " + reclame.ToUpper());
+        }
     }
 }

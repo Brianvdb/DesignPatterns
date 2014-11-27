@@ -8,7 +8,7 @@ namespace DPINT_Week2
 {
     public abstract class ClownDecorator : Clown
     {
-        protected Clown next;
+        private Clown next;
         public ClownDecorator(Clown next)
         {
             this.next = next;

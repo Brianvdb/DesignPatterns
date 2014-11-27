@@ -8,8 +8,6 @@ namespace DPINT_week_3
 {
     public abstract class Observer
     {
-        public virtual void Update(Subject subject){
-
-        }
+        public abstract void Update(Subject subject);
     }
 }

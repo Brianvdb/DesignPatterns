@@ -22,13 +22,13 @@ namespace DPINT_week_3
             observers.Add(observer);
         }
 
-        public void Detatch(Observer observer)
+        public void Dettach(Observer observer)
         {
             observers.Remove(observer);
         }
 
-        public abstract void setState(object o);
+        public abstract void SetState(object o);
 
-        public abstract object getState();
+        public abstract object GetState();
     }
 }

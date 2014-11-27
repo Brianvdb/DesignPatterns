@@ -14,12 +14,12 @@ namespace DPINT_week_3
         {
             reclame = "McDonalds";
         }
-        public override object getState()
+        public override object GetState()
         {
             return reclame;
         }
 
-        public override void setState(object o)
+        public override void SetState(object o)
         {
             reclame = (string) o;
         }

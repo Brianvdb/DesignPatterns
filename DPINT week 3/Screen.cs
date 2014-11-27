@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace DPINT_week_3
 {
-    public class Screen : Observer
+    public abstract class Screen : Observer
     {
-
     }
 }
