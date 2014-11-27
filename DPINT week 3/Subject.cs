@@ -15,7 +15,7 @@ namespace DPINT_week_3
         }
         public void Notify()
         {
-            observers.ForEach(ob => ob.Update());
+            observers.ForEach(ob => ob.Update(this));
         }
 
         public void Attach(Observer observer){
