@@ -9,14 +9,12 @@ namespace DPINT_Week2
 {
     public class Controller
     {
-        private View view;
         private Task task;
         private bool[] baChoice;
 
         public Controller(bool[] baChoice)
         {
             this.baChoice = baChoice;
-            view = new View();
             task = new Task();
         }
 

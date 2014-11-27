@@ -27,8 +27,8 @@ namespace DPINT_week_3
             observers.Remove(observer);
         }
 
-        public abstract Object setState(Object o);
+        public abstract void setState(object o);
 
-        public abstract Object getState();
+        public abstract object getState();
     }
 }
