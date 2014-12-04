@@ -9,5 +9,7 @@ namespace DPINT_Week_3_XAML
     public abstract class Screen : Observer
     {
         public string Text { get; set; }
+
+        public abstract void Update(Subject subject);
     }
 }

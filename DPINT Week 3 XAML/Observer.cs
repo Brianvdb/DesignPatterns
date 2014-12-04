@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace DPINT_Week_3_XAML
 {
-    public abstract class Observer
+    public interface Observer
     {
-        public abstract void Update(Subject subject);
+        void Update(Subject subject);
     }
 }
