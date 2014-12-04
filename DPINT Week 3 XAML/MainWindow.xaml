@@ -9,7 +9,7 @@
     </Window.DataContext>
 
     <DockPanel LastChildFill="True">
-        <TextBox DockPanel.Dock="Left" Width="300" Text="{Binding Screen1}" />
-        <TextBox Text="{Binding Screen2}"/>
+        <TextBox DockPanel.Dock="Left" Width="150" Text="{Binding Screen1}" />
+        <TextBox Width="200" Text="{Binding Screen2}"/>
     </DockPanel>
 </Window>

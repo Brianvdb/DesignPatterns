@@ -19,16 +19,27 @@ namespace DPINT_Week4.ViewModel
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
+        /// 
+
+        public int[] SudokuField
+        {
+            get
+            {
+                return sudokuField;
+            }
+            set
+            {
+                
+            }
+        }
+
+        private int[] sudokuField;
+
         public MainViewModel()
         {
-            ////if (IsInDesignMode)
-            ////{
-            ////    // Code runs in Blend --> create design time data.
-            ////}
-            ////else
-            ////{
-            ////    // Code runs "for real"
-            ////}
+            sudokuField = new int[81];
+
+            sudokuField[0] = 4;
         }
     }
 }
