@@ -1,0 +1,15 @@
+﻿<Window x:Class="DPINT_Week_3_XAML.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:DPINT_Week_3_XAML"
+        Title="MainWindow" Height="350" Width="525">
+
+    <Window.DataContext>
+        <local:ScreenViewer />
+    </Window.DataContext>
+
+    <DockPanel LastChildFill="True">
+        <TextBox DockPanel.Dock="Left" Width="300" Text="{Binding Screen1}" />
+        <TextBox Text="{Binding Screen2}"/>
+    </DockPanel>
+</Window>
