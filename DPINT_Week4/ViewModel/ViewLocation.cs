@@ -1,16 +1,20 @@
 ﻿using SudokuBasis;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DPINT_Week4.ViewModel
 {
-    public class ViewLocation
+    public class ViewLocation : INotifyPropertyChanged
     {
         private SudokuGame game;
         private Position position;
+
+        public event PropertyChangedEventHandler PropertyChanged;
 
         public ViewLocation(SudokuGame game, Position position)
         {
@@ -27,7 +31,15 @@ namespace DPINT_Week4.ViewModel
             {
                 this.position.Value = value;
                 this.game.SetValue(position);
-                Console.WriteLine("change, valid input: " + this.game.IsValid());
+                OnPropertyChanged();
+            }
+        }
+
+        protected void OnPropertyChanged([CallerMemberName] string propertyName = "")
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
         }
     }

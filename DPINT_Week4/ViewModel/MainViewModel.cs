@@ -1,4 +1,5 @@
 using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.CommandWpf;
 using SudokuBasis;
 using System;
 using System.Collections.ObjectModel;
@@ -27,11 +28,14 @@ namespace DPINT_Week4.ViewModel
 
         public ObservableCollection<ViewLocation> Locations { get; set; }
 
+        public RelayCommand NewGameCommand { get; private set; }
+
 
         public MainViewModel()
         {
             Locations = new ObservableCollection<ViewLocation>();
             this.sudoku = new SudokuGame();
+
             this.sudoku.NewGame();
 
             for (int i = 0; i < 81; i++)
@@ -44,8 +48,31 @@ namespace DPINT_Week4.ViewModel
                 };
                 this.sudoku.GetValue(p);
                 Locations.Add(new ViewLocation(sudoku, p));
-            }  
+            }
 
+            NewGameCommand = new RelayCommand(NewGame, DummyTrue);
+        }
+
+        public bool DummyTrue()
+        {
+            return true;
+        }
+
+        public void NewGame()
+        {
+            this.sudoku.NewGame();
+
+            for (int i = 0; i < 81; i++)
+            {
+
+                Position p = new Position()
+                {
+                    X = (short)((i / 9) + 1),
+                    Y = (short)((i % 9) + 1)
+                };
+                this.sudoku.GetValue(p);
+                Locations[i].Value = p.Value;
+            }
         }
     }
 }
