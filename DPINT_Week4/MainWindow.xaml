@@ -17,8 +17,8 @@
     </Window.Resources>
 
     <DockPanel LastChildFill="True">
-        <Button DockPanel.Dock="Bottom">Valsspelen</Button>
-        <Button DockPanel.Dock="Bottom">Controleer spel</Button>
+        <Button DockPanel.Dock="Bottom" Command="{Binding CheatCommand}">Valsspelen</Button>
+        <Button DockPanel.Dock="Bottom" Command="{Binding CheckCommand}">Controleer spel</Button>
         <Button DockPanel.Dock="Bottom" Command="{Binding NewGameCommand}">Nieuw Spel</Button>
         <UniformGrid Columns="3" Rows="3">
 

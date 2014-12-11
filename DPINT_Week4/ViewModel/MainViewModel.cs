@@ -3,6 +3,7 @@ using GalaSoft.MvvmLight.CommandWpf;
 using SudokuBasis;
 using System;
 using System.Collections.ObjectModel;
+using System.Windows;
 
 namespace DPINT_Week4.ViewModel
 {
@@ -29,6 +30,8 @@ namespace DPINT_Week4.ViewModel
         public ObservableCollection<ViewLocation> Locations { get; set; }
 
         public RelayCommand NewGameCommand { get; private set; }
+        public RelayCommand CheatCommand { get; private set; }
+        public RelayCommand CheckCommand { get; private set; }
 
 
         public MainViewModel()
@@ -51,6 +54,8 @@ namespace DPINT_Week4.ViewModel
             }
 
             NewGameCommand = new RelayCommand(NewGame, DummyTrue);
+            CheckCommand = new RelayCommand(CheckGame, DummyTrue);
+            CheatCommand = new RelayCommand(CheatGame, DummyTrue);
         }
 
         public bool DummyTrue()
@@ -73,6 +78,16 @@ namespace DPINT_Week4.ViewModel
                 this.sudoku.GetValue(p);
                 Locations[i].Value = p.Value;
             }
+        }
+
+        public void CheckGame()
+        {
+            MessageBox.Show(sudoku.IsValid().ToString());
+        }
+
+        public void CheatGame()
+        {
+
         }
     }
 }
