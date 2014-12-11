@@ -1,7 +1,6 @@
-using GalaSoft.MvvmLight;
-using System;
+﻿using GalaSoft.MvvmLight;
 
-namespace DPINT_Week4.ViewModel
+namespace $rootnamespace$.ViewModel
 {
     /// <summary>
     /// This class contains properties that the main View can data bind to.
@@ -20,28 +19,16 @@ namespace DPINT_Week4.ViewModel
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
-        /// 
-        static SudokuView sudoView = new SudokuView();
-
-        public int[] SudokuField
-        {
-            get
-            {
-                Console.WriteLine("returns array");
-                return sudoView.SudokuField;
-            }
-            set
-            {
-                sudoView.SudokuField = value;
-                //deze wordt nooit aangeroepen
-                Console.WriteLine("hallow");
-            }
-        }
-
         public MainViewModel()
         {
-            Console.WriteLine("Console is working");
-
+            ////if (IsInDesignMode)
+            ////{
+            ////    // Code runs in Blend --> create design time data.
+            ////}
+            ////else
+            ////{
+            ////    // Code runs "for real"
+            ////}
         }
     }
 }
