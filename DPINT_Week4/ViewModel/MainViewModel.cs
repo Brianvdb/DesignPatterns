@@ -2,6 +2,7 @@ using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.CommandWpf;
 using SudokuBasis;
 using System;
+using System.Linq;
 using System.Collections.ObjectModel;
 using System.Windows;
 
@@ -87,6 +88,31 @@ namespace DPINT_Week4.ViewModel
 
         public void CheatGame()
         {
+            ViewLocation location;
+            Position pos = sudoku.GetHint();
+
+            //x en y zijn om de een of andere rede omgekeerd
+            //MessageBox.Show(pos.X + "=Y;" + pos.Y + "=X: VALUE = " + pos.Value);
+
+            //tel de hoeveelheid die opgelost moet worden
+            int unsolvedCount = 0;
+            foreach (ViewLocation loc in Locations)
+            {
+                if (loc.Value == 0)
+                {
+                    unsolvedCount++;
+                }
+            }
+
+            //Alles behalve 2 moet opgelost worden
+            int solveCount = unsolvedCount - 2;
+            for (int x = 0; x < solveCount; x++)
+            {
+                Position position = sudoku.GetHint();
+                ViewLocation loc = Locations.Where(l => l.X == position.X && l.Y == position.Y).First();
+
+                loc.Value = position.Value;
+            }
 
         }
     }

@@ -35,6 +35,30 @@ namespace DPINT_Week4.ViewModel
             }
         }
 
+        public short X
+        {
+            get
+            {
+                return this.position.X;
+            }
+            set
+            {
+                ;
+            }
+        }
+
+        public short Y
+        {
+            get
+            {
+                return this.position.Y;
+            }
+            set
+            {
+                ;
+            }
+        }
+
         protected void OnPropertyChanged([CallerMemberName] string propertyName = "")
         {
             if (PropertyChanged != null)
