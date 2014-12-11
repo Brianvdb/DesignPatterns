@@ -1,6 +1,7 @@
 using GalaSoft.MvvmLight;
 using SudokuBasis;
 using System;
+using System.Collections.ObjectModel;
 
 namespace DPINT_Week4.ViewModel
 {
@@ -23,27 +24,13 @@ namespace DPINT_Week4.ViewModel
         /// </summary>
         /// 
         private SudokuGame sudoku;
-        private int[] sudokuField = new int[81];
 
-        public int[] SudokuField
-        {
-            get
-            {
-                Console.WriteLine("returns array");
-                return sudokuField;
-            }
-            set
-            {
-                sudokuField = value;
-                //deze wordt nooit aangeroepen
-                Console.WriteLine("hallow");
-            }
-        }
-
+        public ObservableCollection<ViewLocation> Locations { get; set; }
 
 
         public MainViewModel()
         {
+            Locations = new ObservableCollection<ViewLocation>();
             this.sudoku = new SudokuGame();
             this.sudoku.NewGame();
 
@@ -56,7 +43,7 @@ namespace DPINT_Week4.ViewModel
                     Y = (short)((i % 9) + 1)
                 };
                 this.sudoku.GetValue(p);
-                SudokuField[i] = p.Value;
+                Locations.Add(new ViewLocation(sudoku, p));
             }  
 
         }

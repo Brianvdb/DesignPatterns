@@ -22,106 +22,106 @@
         <UniformGrid Columns="3" Rows="3">
 
             <UniformGrid Columns="3" Rows="3" Margin="15">
-                <TextBox Text="{Binding Path=SudokuField[0]}" />
-                <TextBox Text="{Binding Path=SudokuField[1]}" />
-                <TextBox Text="{Binding Path=SudokuField[2]}" />
-                <TextBox Text="{Binding Path=SudokuField[9]}" />
-                <TextBox Text="{Binding Path=SudokuField[10]}" />
-                <TextBox Text="{Binding Path=SudokuField[11]}" />
-                <TextBox Text="{Binding Path=SudokuField[18]}" />
-                <TextBox Text="{Binding Path=SudokuField[19]}" />
-                <TextBox Text="{Binding Path=SudokuField[20]}" />
+                <TextBox Text="{Binding Path=Locations[0].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[1].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[2].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[9].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[10].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[11].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[18].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[19].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[20].Value, Mode=TwoWay}" />
             </UniformGrid>
             <UniformGrid Columns="3" Rows="3" Margin="15">
-                <TextBox Text="{Binding Path=SudokuField[3]}" />
-                <TextBox Text="{Binding Path=SudokuField[4]}" />
-                <TextBox Text="{Binding Path=SudokuField[5]}" />
-                <TextBox Text="{Binding Path=SudokuField[12]}" />
-                <TextBox Text="{Binding Path=SudokuField[13]}" />
-                <TextBox Text="{Binding Path=SudokuField[14]}" />
-                <TextBox Text="{Binding Path=SudokuField[21]}" />
-                <TextBox Text="{Binding Path=SudokuField[22]}" />
-                <TextBox Text="{Binding Path=SudokuField[23]}" />
+                <TextBox Text="{Binding Path=Locations[3].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[4].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[5].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[12].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[13].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[14].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[21].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[22].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[23].Value, Mode=TwoWay}" />
 
             </UniformGrid>
             <UniformGrid Columns="3" Rows="3" Margin="15">
-                <TextBox Text="{Binding Path=SudokuField[6]}" />
-                <TextBox Text="{Binding Path=SudokuField[7]}" />
-                <TextBox Text="{Binding Path=SudokuField[8]}" />
-                <TextBox Text="{Binding Path=SudokuField[15]}" />
-                <TextBox Text="{Binding Path=SudokuField[16]}" />
-                <TextBox Text="{Binding Path=SudokuField[17]}" />
-                <TextBox Text="{Binding Path=SudokuField[24]}" />
-                <TextBox Text="{Binding Path=SudokuField[25]}" />
-                <TextBox Text="{Binding Path=SudokuField[26]}" />
+                <TextBox Text="{Binding Path=Locations[6].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[7].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[8].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[15].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[16].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[17].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[24].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[25].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[26].Value, Mode=TwoWay}" />
             </UniformGrid>
             <UniformGrid Columns="3" Rows="3" Margin="15">
-                <TextBox Text="{Binding Path=SudokuField[27]}" />
-                <TextBox Text="{Binding Path=SudokuField[28]}" />
-                <TextBox Text="{Binding Path=SudokuField[29]}" />
-                <TextBox Text="{Binding Path=SudokuField[36]}" />
-                <TextBox Text="{Binding Path=SudokuField[37]}" />
-                <TextBox Text="{Binding Path=SudokuField[38]}" />
-                <TextBox Text="{Binding Path=SudokuField[45]}" />
-                <TextBox Text="{Binding Path=SudokuField[46]}" />
-                <TextBox Text="{Binding Path=SudokuField[47]}" />
+                <TextBox Text="{Binding Path=Locations[27].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[28].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[29].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[36].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[37].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[38].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[45].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[46].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[47].Value, Mode=TwoWay}" />
             </UniformGrid>
             <UniformGrid Columns="3" Rows="3" Margin="15">
-                <TextBox Text="{Binding Path=SudokuField[30]}" />
-                <TextBox Text="{Binding Path=SudokuField[31]}" />
-                <TextBox Text="{Binding Path=SudokuField[32]}" />
-                <TextBox Text="{Binding Path=SudokuField[39]}" />
-                <TextBox Text="{Binding Path=SudokuField[40]}" />
-                <TextBox Text="{Binding Path=SudokuField[41]}" />
-                <TextBox Text="{Binding Path=SudokuField[48]}" />
-                <TextBox Text="{Binding Path=SudokuField[49]}" />
-                <TextBox Text="{Binding Path=SudokuField[50]}" />
+                <TextBox Text="{Binding Path=Locations[30].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[31].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[32].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[39].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[40].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[41].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[48].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[49].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[50].Value, Mode=TwoWay}" />
             </UniformGrid>
             <UniformGrid Columns="3" Rows="3" Margin="15">
-                <TextBox Text="{Binding Path=SudokuField[33]}" />
-                <TextBox Text="{Binding Path=SudokuField[34]}" />
-                <TextBox Text="{Binding Path=SudokuField[35]}" />
-                <TextBox Text="{Binding Path=SudokuField[42]}" />
-                <TextBox Text="{Binding Path=SudokuField[43]}" />
-                <TextBox Text="{Binding Path=SudokuField[54]}" />
-                <TextBox Text="{Binding Path=SudokuField[51]}" />
-                <TextBox Text="{Binding Path=SudokuField[52]}" />
-                <TextBox Text="{Binding Path=SudokuField[53]}" />
+                <TextBox Text="{Binding Path=Locations[33].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[34].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[35].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[42].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[43].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[54].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[51].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[52].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[53].Value, Mode=TwoWay}" />
             </UniformGrid>
             <UniformGrid Columns="3" Rows="3" Margin="15">
-                <TextBox Text="{Binding Path=SudokuField[54]}" />
-                <TextBox Text="{Binding Path=SudokuField[55]}" />
-                <TextBox Text="{Binding Path=SudokuField[56]}" />
-                <TextBox Text="{Binding Path=SudokuField[63]}" />
-                <TextBox Text="{Binding Path=SudokuField[64]}" />
-                <TextBox Text="{Binding Path=SudokuField[65]}" />
-                <TextBox Text="{Binding Path=SudokuField[72]}" />
-                <TextBox Text="{Binding Path=SudokuField[73]}" />
-                <TextBox Text="{Binding Path=SudokuField[74]}" />
+                <TextBox Text="{Binding Path=Locations[54].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[55].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[56].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[63].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[64].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[65].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[72].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[73].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[74].Value, Mode=TwoWay}" />
             </UniformGrid>
             <UniformGrid Columns="3" Rows="3" Margin="15">
-                <TextBox Text="{Binding Path=SudokuField[57]}" />
-                <TextBox Text="{Binding Path=SudokuField[58]}" />
-                <TextBox Text="{Binding Path=SudokuField[59]}" />
-                <TextBox Text="{Binding Path=SudokuField[66]}" />
-                <TextBox Text="{Binding Path=SudokuField[67]}" />
-                <TextBox Text="{Binding Path=SudokuField[68]}" />
-                <TextBox Text="{Binding Path=SudokuField[75]}" />
-                <TextBox Text="{Binding Path=SudokuField[76]}" />
-                <TextBox Text="{Binding Path=SudokuField[77]}" />
+                <TextBox Text="{Binding Path=Locations[57].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[58].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[59].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[66].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[67].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[68].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[75].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[76].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[77].Value, Mode=TwoWay}" />
             </UniformGrid>
             <UniformGrid Columns="3" Rows="3" Margin="15">
-                <TextBox Text="{Binding Path=SudokuField[60]}" />
-                <TextBox Text="{Binding Path=SudokuField[61]}" />
-                <TextBox Text="{Binding Path=SudokuField[62]}" />
-                <TextBox Text="{Binding Path=SudokuField[69]}" />
-                <TextBox Text="{Binding Path=SudokuField[70]}" />
-                <TextBox Text="{Binding Path=SudokuField[71]}" />
-                <TextBox Text="{Binding Path=SudokuField[78]}" />
-                <TextBox Text="{Binding Path=SudokuField[79]}" />
-                <TextBox Text="{Binding Path=SudokuField[80]}" />
+                <TextBox Text="{Binding Path=Locations[60].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[61].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[62].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[69].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[70].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[71].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[78].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[79].Value, Mode=TwoWay}" />
+                <TextBox Text="{Binding Path=Locations[80].Value, Mode=TwoWay}" />
             </UniformGrid>
         </UniformGrid>
-        
+
     </DockPanel>
 </Window>
