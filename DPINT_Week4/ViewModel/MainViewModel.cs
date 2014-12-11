@@ -1,4 +1,5 @@
 using GalaSoft.MvvmLight;
+using SudokuBasis;
 using System;
 
 namespace DPINT_Week4.ViewModel
@@ -21,26 +22,42 @@ namespace DPINT_Week4.ViewModel
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
         /// 
-        static SudokuView sudoView = new SudokuView();
+        private SudokuGame sudoku;
+        private int[] sudokuField = new int[81];
 
         public int[] SudokuField
         {
             get
             {
                 Console.WriteLine("returns array");
-                return sudoView.SudokuField;
+                return sudokuField;
             }
             set
             {
-                sudoView.SudokuField = value;
+                sudokuField = value;
                 //deze wordt nooit aangeroepen
                 Console.WriteLine("hallow");
             }
         }
 
+
+
         public MainViewModel()
         {
-            Console.WriteLine("Console is working");
+            this.sudoku = new SudokuGame();
+            this.sudoku.NewGame();
+
+            for (int i = 0; i < 81; i++)
+            {
+
+                Position p = new Position()
+                {
+                    X = (short)((i / 9) + 1),
+                    Y = (short)((i % 9) + 1)
+                };
+                this.sudoku.GetValue(p);
+                SudokuField[i] = p.Value;
+            }  
 
         }
     }
