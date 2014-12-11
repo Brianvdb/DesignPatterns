@@ -22,7 +22,7 @@
         <UniformGrid Columns="3" Rows="3">
 
             <UniformGrid Columns="3" Rows="3" Margin="15">
-                <TextBox Text="{Binding Path=SudokuField[10]}" />
+                <TextBox Text="{Binding Path=SudokuField[0]}" />
                 <TextBox Text="{Binding Path=SudokuField[1]}" />
                 <TextBox Text="{Binding Path=SudokuField[2]}" />
                 <TextBox Text="{Binding Path=SudokuField[9]}" />
