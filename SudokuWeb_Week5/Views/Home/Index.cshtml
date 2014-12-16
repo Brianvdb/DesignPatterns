@@ -6,7 +6,17 @@
 
 <h2>Sudoku Spel</h2>
 
-<table border="1" cellpadding="10" cel>
+@if (!Model.IsValid())
+{
+    <script type="text/javascript">
+        alert("Het ingevoerde getal klopt niet.");
+    </script>
+} 
+
+
+
+
+<table border="1" cellpadding="10">
     @{
         for (int i = 0; i < 81; i++)
         {
@@ -34,6 +44,9 @@
 <hr/>
 <input type="button" value="Nieuw Spel" onclick="location.href='@Url.Action("NewGame", "Home")'" />
 <input type="button" value="Valsspelen" onclick="location.href='@Url.Action("Hint", "Home")'" />
+
+
+
 
 
 
