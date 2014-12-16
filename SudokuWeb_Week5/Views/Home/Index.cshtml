@@ -1,0 +1,49 @@
+﻿@model SudokuBasis.SudokuGame
+
+@{
+    ViewBag.Title = "Sudoku";
+}
+
+<h2>Sudoku Spel</h2>
+
+<table border="1" cellpadding="10" cel>
+    @{
+        for (int i = 0; i < 81; i++)
+        {
+            short x = (short) ((i % 9) + 1);
+            short y = (short) ((i / 9) + 1);
+            if (x == 1)
+            {
+                @Html.Raw("<tr>")
+            }
+            SudokuBasis.Position pos = new SudokuBasis.Position()
+            {
+                X = x,
+                Y = y
+            };
+            Model.GetValue(pos);
+            @Html.Raw("<td align='center' width='50' height='50'>" + pos.Value + "</td>");
+            if (x == 9)
+            {
+                @Html.Raw("<tr/>")
+            }
+    }
+    }
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
