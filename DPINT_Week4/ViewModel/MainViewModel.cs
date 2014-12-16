@@ -88,7 +88,6 @@ namespace DPINT_Week4.ViewModel
 
         public void CheatGame()
         {
-            ViewLocation location;
             Position pos = sudoku.GetHint();
 
             //x en y zijn om de een of andere rede omgekeerd
