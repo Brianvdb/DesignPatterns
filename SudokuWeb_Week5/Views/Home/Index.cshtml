@@ -11,7 +11,14 @@
     <script type="text/javascript">
         alert("Het ingevoerde getal klopt niet.");
     </script>
-} 
+}
+
+@if (Model.IsCompleted())
+{
+    <script type="text/javascript">
+        alert("Gefeliciteerd! Je hebt de sudoku opgelost!");
+    </script>
+}
 
 <script src="~/Scripts/jquery-1.10.2.js"></script>
 
