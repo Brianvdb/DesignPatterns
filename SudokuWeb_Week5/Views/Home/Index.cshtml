@@ -13,8 +13,37 @@
     </script>
 } 
 
+<script src="~/Scripts/jquery-1.10.2.js"></script>
 
+<script type="text/javascript">
+    var indexx, indexy, indexvalue;
+    $(document).ready(function () {
+        
+        $("tr").on("click", "td", function () {
+            //change colors of selected field
+            $(".selected").removeClass("selected");
+            $(this).addClass("selected");
 
+            //what field is selected now? What value does it contain?
+            indexx = $(this).index() + 1;
+            indexy = $(this).parent("tr").index() + 1;
+            indexvalue = $(this).html();
+
+            //test code
+            console.log("index-x: " + indexx + " index-y: " + indexy + " value: " + indexvalue);
+
+            //make input div visible
+            $("#inputfield").val(indexvalue);
+            $("#inputdiv").css("visibility", "visible");
+        });
+
+        $("#inputbutton").click(function () {
+            indexvalue = $("#inputfield").val();
+            location.href = "/Home/SetValue/?indexx=" + indexx + "&indexy=" + indexy + "&value=" + indexvalue;
+        });
+
+    });
+</script>
 
 <table border="1" cellpadding="10">
     @{
@@ -35,12 +64,16 @@
             @Html.Raw("<td align='center' width='50' height='50'>" + pos.Value + "</td>");
             if (x == 9)
             {
-                @Html.Raw("<tr/>")
+                @Html.Raw("</tr>")
             }
-    }
+        }
     }
 </table>
-
+<hr />
+<div id="inputdiv" style="visibility:hidden">
+    <input type="text" min="0" max="9" id="inputfield" />
+    <input type="button" value="instellen" id="inputbutton"/>
+</div>
 <hr/>
 <input type="button" value="Nieuw Spel" onclick="location.href='@Url.Action("NewGame", "Home")'" />
 <input type="button" value="Valsspelen" onclick="location.href='@Url.Action("Hint", "Home")'" />

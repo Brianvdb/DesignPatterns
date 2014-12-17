@@ -18,13 +18,15 @@ textarea {
 
 tr, td {
     border: solid 1px;
+    -webkit-transition: 2s;
+    transition: 2s;
 }
 
 tr:first-child {
     border-top: solid 3px;
 }
 
-tr:nth-child(3n-1) {
+tr:nth-child(3n) {
     border-bottom: solid 3px;
 }
 
@@ -36,7 +38,7 @@ tr:last-child {
     border-top: solid 1px !important;
 }
 
-tr td:nth-child(3n+3) {
+tr td:nth-child(3n) {
     border-right: solid 3px;
 }
 
@@ -44,3 +46,6 @@ tr td:last-child {
     border-right: solid 3px;
 }
 
+.selected{
+    background-color:#0094ff;
+}

@@ -26,6 +26,13 @@ namespace SudokuWeb_Week5.Controllers
             return RedirectToAction("Index");
         }
 
+        public ActionResult SetValue(short indexx, short indexy, short value)
+        {
+            SudokuGame sudoku = GetGameSession();
+            sudoku.SetValue(new Position() { X = indexx, Y = indexy, Value = value });
+            return RedirectToAction("Index");
+        }
+
         public ActionResult Hint()
         {
             SudokuGame sudoku = GetGameSession();
