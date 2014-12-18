@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace DPINT_Week4.ViewModel
 {
@@ -31,6 +32,11 @@ namespace DPINT_Week4.ViewModel
             {
                 this.position.Value = value;
                 this.game.SetValue(position);
+                if (this.game.IsCompleted())
+                {
+                    MessageBoxResult result = MessageBox.Show("U heeft de sudoku opgelost.", "Gefeliciteerd!", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                    
+                }
                 OnPropertyChanged();
             }
         }
